@@ -24,10 +24,9 @@ def integrating_area(theta):
 for i in range(n,0,-1):
     theta = (n-i)*np.pi/(2*n)
     values[theta] = integrating_area(theta)
-print(values)
-area_max = max(values, key= lambda x: values[x])
-print("Angle of projection that gives the maximum area is -", area_max, "radians")
-print("The maximum area is - ", values[area_max], "sq. units")
+max_area_angle = max(values, key = lambda x: values[x])
+print("Angle of projection that gives the maximum area is -", max_area_angle, "radians")
+print("The maximum area is - ", values[max_area_angle], "sq. units")
 
 figure, axes = plt.subplots()
 axes.set_aspect(1)
@@ -36,9 +35,10 @@ plt.ylim(-10,10)
 for theta in values.keys():
     x = np.linspace(-10, 10, 50)
     y = f(x, theta)
-    if theta==area_max: colour = "r"
+    if theta == max_area_angle: colour = "r"
     else: colour = "b"
-    plt.plot(x,y, colour, label = str(theta))
+    plt.plot(x,y, colour)
+    if theta == max_area_angle: plt.fill_between(x, y, 0, color='red', alpha=.1)
 plt.grid(True, linestyle =':')
 plt.xlim([0, 10])
 plt.ylim([0, 10])
