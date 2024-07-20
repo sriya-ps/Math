@@ -9,7 +9,7 @@ g = 10
 global values
 values = {}
 global pts
-n = 8
+n = 6
 
 def f(x, theta): 
     return x*np.tan(theta) - g*x**2/(2*u**2*np.cos(theta)**2)
