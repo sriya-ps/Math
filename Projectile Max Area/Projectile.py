@@ -42,7 +42,7 @@ for theta in values.keys():
 plt.grid(True, linestyle =':')
 plt.xlim([0, 10])
 plt.ylim([0, 10])
-plt.xlabel('x-axis')
-plt.ylabel('y-axis')
+plt.xlabel('Range')
+plt.ylabel('Height')
  
 plt.show()
