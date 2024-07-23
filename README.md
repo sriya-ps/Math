@@ -5,7 +5,7 @@
     <td><a href="https://github.com/sriya-ps/Math/wiki/Apollonius-Circles">Wiki</a></td>
   </tr>
   <tr>
-    <td>Projectile Max Area/td>
+    <td>Projectile Max Area</td>
     <td><a href="https://github.com/sriya-ps/Math/tree/main/Projectile%20Max%20Area">Code</a></td>
     <td><a href="https://github.com/sriya-ps/Math/wiki/Projectile-Max-Area">Wiki</a></td>
   </tr>
