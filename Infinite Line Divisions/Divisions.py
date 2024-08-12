@@ -20,9 +20,9 @@ def x(k, memo={}):
 
 xseq = np.array([x(i) for i in range(kmax)])
 kseq = np.array([i for i in range(kmax)])
-print("( k , x(k) )")
+print("[ k , x(k) ]")
 for i in range(kmax):
-    print("(",kseq[i], ",", xseq[i],")")
+    print("[",kseq[i], ",", xseq[i],"]")
 xinf_num=(m+n)*b+n*a
 xinf_den=(m+n)+n
 xinf = xinf_num/xinf_den
