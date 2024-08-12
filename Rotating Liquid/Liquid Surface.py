@@ -1,12 +1,10 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from matplotlib import cm
-from mpl_toolkits.mplot3d import Axes3D
 
 r0 = 1 # Radius of container in m
 h0 = 2.5 # Height of liquid in container in m
-H = 4 # Height of container in m
-w = 6 # Angular speed in rad/s
+H = 10 # Height of container in m
+w = 10 # Angular speed in rad/s
 g = 10 # Gravitation field in m/s/s
 
 t = np.linspace(0, 2*np.pi, 36)
@@ -29,12 +27,10 @@ r_l, t_l = np.meshgrid(r, t)
 x_l = r_l * np.cos(t_l)
 y_l = r_l * np.sin(t_l)
 z_l = h0 + ((w**2)/(2*g))*(r_l**2 - (r0**2/2))
-print(z_l)
 
 fig, ax = plt.subplots(subplot_kw={"projection": "3d"})
-ax.set_title('Rotating Liquid')
-#ax.set_axis_off()
+ax.set_title('Liquid Surface')
 cyl = ax.plot_wireframe(x_c, y_c, z_c, color="gray", linestyle="dashed")
 pl = ax.plot_wireframe(x_p, y_p, z_p, color="gray", linestyle="dashed")
-sf = ax.plot_surface(x_l, y_l, z_l, cmap=cm.coolwarm, linewidth=0, antialiased=True, cstride=2, rstride=2)
+sf = ax.plot_surface(x_l, y_l, z_l, color="silver")
 plt.show()
