@@ -15,6 +15,11 @@
     <td><a href="https://github.com/sriya-ps/Math/wiki/Projectile-Max-Area">Wiki</a></td>
   </tr>
   <tr>
+    <td>Rotating Liquid</td>
+    <td><a href="https://github.com/sriya-ps/Math/tree/main/Rotating%20Liquid">Code</a></td>
+    <td><a href="https://github.com/sriya-ps/Math/wiki/Rotating-Liquid">Wiki</a></td>
+  </tr>
+  <tr>
     <td>Secret Sharing</td>
     <td><a href="https://github.com/sriya-ps/Math/tree/main/Secret%20Sharing">Code</a></td>
     <td><a href="https://github.com/sriya-ps/Math/wiki/Secret-Sharing">Wiki</a></td>
